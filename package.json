@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "rm -rf lib/ && npm run build",
+    "prepublishOnly": "npm test",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "microservice",
@@ -18,7 +21,10 @@
   "files": [
     "lib/**/*"
   ],
-  "repository": "github:WangHansen/jwt-jwks-client",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WangHansen/jwt-jwks-client.git"
+  },
   "author": "Hansen Wang",
   "license": "MIT",
   "dependencies": {
@@ -33,6 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "@typescript-eslint/parser": "^4.6.1",
     "eslint": "^7.12.1",
+    "codecov": "^3.8.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.6.2",
