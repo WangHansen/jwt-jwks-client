@@ -8,9 +8,6 @@ import JwksError from "./errors/JwksError";
 export interface ClientOptions {
   jwksUri: string;
   rateLimit?: number; // num of request per min
-  alwaysFetch?: boolean;
-  cacheMaxEntries?: number;
-  cacheMaxAge?: number;
   secure?: boolean;
   requestHeaders?: Record<string, string>;
   requestAgentOptions?: Record<string, string>;
@@ -25,7 +22,6 @@ export class JwksClient {
   constructor(private options: ClientOptions) {
     this.options = {
       rateLimit: 0,
-      alwaysFetch: false,
       timeout: 30000,
       ...options,
     };
@@ -78,7 +74,7 @@ export class JwksClient {
    */
   async verify(
     token: string,
-    options?: JWT.SignOptions
+    options?: JWT.VerifyOptions
   ): Promise<Record<string, unknown>> | never {
     options = options || {};
     const { header } = JWT.decode(token, { complete: true });
