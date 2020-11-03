@@ -90,6 +90,10 @@ To show trace logs you can set the following environment variable:
 DEBUG=jwks
 ```
 
+## JWT token sign
+
+Check out my other [JWT Auth library](https://github.com/WangHansen/jwt-auth) that supports not only regular JWT token generation, but also __key rotation__ and __key revocation__.
+
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FWangHansen%2Fjwt-jwks-client.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FWangHansen%2Fjwt-jwks-client?ref=badge_large)
