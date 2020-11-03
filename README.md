@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/WangHansen/jwt-jwks-client.svg?branch=master)](https://travis-ci.org/WangHansen/jwt-jwks-client)
 [![codecov](https://codecov.io/gh/WangHansen/jwt-jwks-client/branch/master/graph/badge.svg?token=68TH4RQWM2)](https://codecov.io/gh/WangHansen/jwt-jwks-client)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FWangHansen%2Fjwt-jwks-client.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FWangHansen%2Fjwt-jwks-client?ref=badge_shield)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -88,3 +89,7 @@ To show trace logs you can set the following environment variable:
 ```
 DEBUG=jwks
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FWangHansen%2Fjwt-jwks-client.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FWangHansen%2Fjwt-jwks-client?ref=badge_large)
