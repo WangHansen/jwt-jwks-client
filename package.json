@@ -2,7 +2,7 @@
   "name": "jwt-jwks-client",
   "version": "0.2.0",
   "description": "A client library that verifies a JWT token by retrieve signing keys from a JWKS (JSON Web Key Set) endpoint.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest",
